@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<title> JGB Locação de Projetores </title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,    initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="geo.region" content="BR-PR">
+<meta name="geo.placement" content="Colombo">
+<meta name="geo.position" content="-25.36997746782584, -49.16598553283551">
+<meta name="ICBM" content="-25.36997746782584, -49.16598553283551">
+<link rel="icon" href="_imagens/logomarca/Logo.PNG" sizes="16x16" type="image/png">
+<link rel="stylesheet" href="_css/estilo.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="./_css/estilo4.css">
+<link rel="stylesheet" href="./_css/theme-black.css">
+<link rel="stylesheet" href="./_css/carrossel.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+
+
+<!-- Icones Minimalistas -->
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* 01-Primeiro quadrante da pagina */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url(_imagens/datacenter.jpg);
+        min-height: 100%;
+        color: white;
+    }
+
+    /* Barra de menu superior e botoes na barra */
+    .bar .button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+
+
+    <div class="top">
+        <div class="bar  black card" id="myNavbar">
+            <a href="#Home" class="bar-item button  wide"> JGB </a>
+
+            <!-- 01.1 - Botoes de navegação -->
+            <div class="center   hide-small">
+                <a href="#Home" class="bar-item button"> <i class="fa fa-home"> </i> HOME </a>
+                <a href="#servicos" class="bar-item button"> <i class="fa fa-th"> </i> SERVIÇOS </a>
+                <a href="#team" class="bar-item button"> <i class="fa fa-user"> </i> EQUIPE </a>
+                <a href="#Contato" class="bar-item button"> <i class="fa fa-envelope"> </i> CONTATO </a>
+            </div>
+
+            <!-- 01.2 - Opçoes do menu de navegaçao para mobile, abertura e fechamento -->
+            <a href="javascript:void(0)" class="bar-item button  center   hide-large  hide-medium"
+                onclick="botaoAbre()">
+                <i class="fa   fa-bars"> </i>
+            </a>
+        </div>
+    </div>
+
+    <nav class="sidebar  bar-block   black   card    animate-left    hide-medium hide-large" style="display:none"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="botaoFechar()" class="bar-item button  large   padding-16"> FECHAR</a>
+        <a href="#Home" onclick="botaoFechar()" class="bar-item button"> HOME </a>
+        <a href="#servicos" onclick="botaoFechar()" class="bar-item button"> SERVIÇOS </a>
+        <a href="#team" onclick="botaoFechar()" class="bar-item button"> EQUIPE </a>
+        <a href="#Contato" onclick="botaoFechar()" class="bar-item button"> CONTATO </a>
+
+    </nav>
+
+    <!-- 02 - Tela de apresentação -->
+    <header class="bgimg-1  display-container   grayscale-min" id="Home">
+
+        <!-- 02.1 - Textos da Tela de apresentação -->
+        <div class="display-left text-black" style="padding:48px">
+            <span class="jumbo hide-small"> JGB Locação de Projetores </span> <br>
+            <!-- Textos da Tela de apresentação quando a tela aumentar  -->
+            <span class="xxlarge hide-large hide-medium"> JGB Locação de Projetores </span> <br>
+            <!-- Textos da Tela de apresentação quando a tela reduzir   -->
+            <span class="large"> <B>Soluções customizadas para suas necessidades. </B></span>
+        </div>
+
+    </header>
+
+
+    <!-- Carrossel de Imagens   -->
+    <div class="swiffy-slider slider-item-ratio slider-item-ratio-21x9 slider-nav-visible slider-nav-animation slider-item-first-visible"
+        id="infiniteSliding">
+        <style>
+            #infiniteSliding .slider-indicators button:last-child {
+                display: none
+            }
+        </style>
+        <ul class="slider-container" id="container1">
+            <li id="slide1" class=""><img src="./_imagens/produtos/1.jpg" alt="..." loading="lazy"></li>
+            <li id="slide2" class=""><img src="./_imagens/produtos/2.jpg" alt="..." loading="lazy"></li>
+            <li id="slide3" class="slide-visible"><img src="./_imagens/produtos/3.jpg" alt="..." loading="lazy">
+            </li>
+            <li id="slide4"><img src="./_imagens/produtos/1.jpg" alt="..." loading="lazy"></li>
+            <li id="slide5"><img src="./_imagens/produtos/2.jpg" alt="..." loading="lazy"></li>
+            <li id="slide6"><img src="./_imagens/produtos/3.jpg" alt="..." loading="lazy"></li>
+        </ul>
+
+        <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+        <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+
+        <div class="slider-indicators">
+            <button aria-label="Go to slide" class="active"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+        </div>
+
+    </div>
+    <!-- Carrossel de Imagens   -->
+    <!-- 02 - Tela de apresentação -->
+
+    <div class="center" id="produtos">
+        <div style="background-color: rgb(37,37,37); color: rgb(1, 157, 172); padding: 20px 20px;" id="servicos">
+            <h2>CONHEÇA NOSSOS PRODUTOS PARA LOCAÇÃO</h2>
+            <p>Itens para o seu evento ser grandioso:</p>
+
+            <div class="w3-row"><br>
+
+                <div class="w3-quarter">
+                    <a href="#vendas"><img src="./_imagens/produtos/Projetor.PNG" alt="Boss" style="width:45%"
+                            class="w3-circle w3-hover-opacity"></a>
+                    <h3>PROJETORES</h3>
+                    <p></p>
+                </div>
+
+                <div class="w3-quarter">
+                    <a href="#vendas"><img src="./_imagens/produtos/CxDeSom.PNG" alt="Boss" style="width:45%"
+                            class="w3-circle w3-hover-opacity"></a>
+                    <h3>CAIXAS DE SOM</h3>
+                    <p></p>
+                </div>
+
+                <div class="w3-quarter">
+                    <a href="#vendas"><img src="./_imagens/produtos/MicrofoneSemFio.PNG" alt="Boss" style="width:45%"
+                            class="w3-circle w3-hover-opacity"></a>
+                    <h3>MICROFONES SEM FIO</h3>
+                    <p></p>
+                </div>
+
+                <div class="w3-quarter">
+                    <a href="#vendas"><img src="./_imagens/produtos/TelaDeProjecao.PNG" alt="Boss" style="width:45%"
+                            class="w3-circle w3-hover-opacity"></a>
+                    <h3>KIT PALESTRA</h3>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Vantagens Container -->
+
+    <div style="background-color: rgb(255, 255, 255); color: rgb(37, 37, 37); padding: 20px 20px;" id="vantagens">
+        <div class="center" style="margin-top:4px">
+            <div class="row-padding">
+                <div class="col  m6">
+                    <h1><b> Vantagens financeiras da terceirização </b></h1>
+                    <h5><i class="fa fa-check" aria-hidden="true"> Elimina custo de manutenção e suporte técnico </i>
+                    </h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"> Evita o desembolso de alto valor para aquisição de
+                            equipamentos </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"> Não há prejuízo com depreciação </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"> Locação é classificada como despesa, passível de
+                            abatimento no IR </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"> Agilidade na substituição e renovação dos
+                            equipamentos </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"> Previsibilidade de fluxo de caixa através de
+                            contratos com valores fechado </i></h5>
+                </div>
+                <div class="col  m6">
+                    <h1> <b> Vantagens operacionais da terceirização </b> </h1>
+                    <h5><i class="fa fa-check" aria-hidden="true"></i>Agilidade na substituição e renovação dos
+                        equipamentos </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"></i>Flexibilidade e agilidade na negociação contratual
+                        </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"></i>Entrega, montagem e instalação no local e horário
+                        desejado </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"></i>Inclusão de novos equipamentos de forma simples
+                        </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"></i>Equipamentos com tecnologia adequada a cada função
+                        </i></h5>
+                    <h5><i class="fa fa-check" aria-hidden="true"></i>Reparo ou substituição de equipamentos no prazo
+                        máximo de 8 horas comerciais </i></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Row -->
+    <div style="background-color: rgb(37, 37, 37); color: rgb(1, 157, 172); padding: 20px 20px;" id="vendas">
+        <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+            <h2>PREÇOS</h2>
+            <p>Busque um plano que melhor lhe atenderá.</p><br>
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">Basic</p>
+                    </li>
+                    <li class="w3-padding-16"><b>1</b> Projetor de 1000 à 2000 lumens</li>
+                    <li class="w3-padding-16"><b>1</b> Tela branca de até 70'</li>
+                    <li class="w3-padding-16"><b>Instalação</b> e retirada</li>
+                    <li class="w3-padding-16"><b>Suporte </b> tecnico</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><b>R</b><i class="fa fa-usd"></i> 200</h2>
+                        <span class="w3-opacity">24h</span>
+                    </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="https://wa.me/5541995923520?text=Olá%20.%20Tenho%20interesse%20no%20pacote%20Basic%20de%20locação%20de%20projetores%20."
+                            target="_blank">
+                            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Adquira
+                                já</button></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">Premium</p>
+                    </li>
+                    <li class="w3-padding-16"><b>1</b> Projetor de 2000 à 3000 lumens</li>
+                    <li class="w3-padding-16"><b>1</b> Tela branca de até 100'</li>
+                    <li class="w3-padding-16"><b>1</b> Porta-banner</li>
+                    <li class="w3-padding-16"><b>1</b> Caixa de Som</li>
+                    <li class="w3-padding-16"><b>1</b> Microfone bastão sem fio</li>
+                    <li class="w3-padding-16"><b>Suporte</b> técnico</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><b>R</b><i class="fa fa-usd"></i> 400</h2>
+                        <span class="w3-opacity">24h</span>
+                    </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="https://wa.me/5541995923520?text=Olá%20.%20Tenho%20interesse%20no%20pacote%20Premium%20de%20locação%20de%20projetores%20."
+                            target="_blank">
+                            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Adquira
+                                já</button></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">Pro</p>
+                    </li>
+                    <li class="w3-padding-16"><b>1</b> Projetor de 2000 à 3000 lumens</li>
+                    <li class="w3-padding-16"><b>1</b> Tela branca de até 100'</li>
+                    <li class="w3-padding-16"><b>1</b> Porta-banner</li>
+                    <li class="w3-padding-16"><b>Suporte</b> técnico</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><b>R</b><i class="fa fa-usd"></i> 300</h2>
+                        <span class="w3-opacity">24h</span>
+                    </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="https://wa.me/5541995923520?text=Olá%20.%20Tenho%20interesse%20no%20pacote%20Pró%20de%20locação%20de%20projetores%20."
+                            target="_blank">
+                            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Adquira
+                                já</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Team Container -->
+
+    <div style="background-color: rgb(1, 157, 172); color: rgb(37, 37, 37); padding: 28px 28px;" id="team">
+        <div class="center" id="team">
+            <h2>NOSSA EQUIPE</h2>
+            <p>Meet the team - our office rats:</p>
+
+            <div class="w3-row"><br>
+
+                <div class="w3-quarter">
+                    <img src="./_imagens/colaboradores/Guilherme.PNG" alt="Boss" style="width:45%"
+                        class="w3-circle w3-hover-opacity">
+                    <h3>Guilherme</h3>
+                    <p>Administrativo & Operações</p>
+                    <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">
+                            <a href="https://wa.me/5541992849781" target="_blank">
+                        </i>(41) 9 9284-9781 </a></p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="./_imagens/colaboradores/Janni.jpg" alt="Boss" style="width:45%"
+                        class="w3-circle w3-hover-opacity">
+                    <h3>Jannifer</h3>
+                    <p>Vendas & Marketing</p>
+                    <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">
+                            <a href="https://wa.me/5541996251769" target="_blank">
+                        </i>(41) 9 9625-1769 </a></p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="./_imagens/colaboradores/Beatriz.jpg" alt="Boss" style="width:45%"
+                        class="w3-circle w3-hover-opacity">
+                    <h3>Beatriz</h3>
+                    <p>Vendas & Marketing</p>
+                    <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">
+                            <a href="https://wa.me/5541999430883" target="_blank">
+                        </i>(41) 9 9943-0883 </a></p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="./_imagens/colaboradores/Julio.jpg" alt="Boss" style="width:45%"
+                        class="w3-circle w3-hover-opacity">
+                    <h3>Júlio</h3>
+                    <p>Operações & Vendas</p>
+                    <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">
+                            <a href="https://wa.me/5541995198408" target="_blank">
+                        </i>(41) 9 9519-8408 </a></p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 07.1 - Nossos parceiros -->
+    <div style="background-color: rgb(37,37,37); color: rgb(1, 157, 172); padding: 28px 28px;" id="orcamento">
+        <h1 class="center"> <b> ALGUNS DE NOSSOS CLIENTES: </b></h1><br>
+        <!-- 07.2- Nossos parceiros -->
+        <div class="row-padding" style="margin-top:64px">
+            <div class="col  l3  m6">
+                <a href="http://www.itshare.com.br/" target="_blank">
+                    <img src="_imagens/parceiros/ITShare102.png" style="width:100%" class="hover-opacity" alt="ITShare">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10 - Opcoes de contato -->
+    <div class="container    black" style="padding:50px    16px" id="Contato">
+        <h2 class="center"> CONTATO </h2>
+        <p class="center   large"> Não espere mais, envie-nos uma mensagem: </p>
+        <div style="margin-top:48px" class="col m6">
+            <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right"> <a href="https://wa.me/5541996251769"
+                        target="_blank"> </i> WhatsApp (41) 9 9625-1769 </i></a></p>
+            <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right"> <a href="https://wa.me/5541995198408"
+                        target="_blank"> </i> WhatsApp (41) 9 9519-8408 </i></a></p>
+            <p> <i class="fa   fa-map-marker   fa-fw   xxlarge margin-right"> </i> Travessa Lago Salto Caxias 91 -
+                Colombo - PR </p>
+        </div>
+        <div style="margin-top:48px" class="col m6">
+            <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right"> <a href="https://wa.me/5541999430883"
+                        target="_blank"> </i> WhatsApp (41) 9 9943-0883 </i></a></p>
+            <p> <i class="fa   fa-whatsapp     fa-fw   xxlarge margin-right"> <a href="https://wa.me/5541992849781"
+                        target="_blank"> </i> WhatsApp (41) 9 9284-9781 </i></a></p>
+            <p> <i class="fa   fa-envelope     fa-fw   xxlarge margin-right"> </i> E-mail:
+                contato@ghgconsultoriaemti.com </p>
+
+            <br>
+
+            <div style="margin-top:48px">
+                <link rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                <a href="https://wa.me/5541996251769?text=A%20GHG%20Consultoria%20em%20TI%20agradece%20o%20seu%20contato.%20O%20que%20podemos%20fazer%20por%20você%20hoje%20?"
+                    style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+                            z-index:1000;" target="_blank">
+                    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- 11.0 - Localização -->
+
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.038152404833!2d-49.16817898498699!3d-25.370037783816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9fa6cf03153%3A0x29b11f8c4baa0367!2sGHG%20Consultoria%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1638303290522!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:  1px" allowfullscreen="" loading="lazy"> </iframe>
+        </div>
+
+
+        <!-- 12 - Rodapé -->
+        <footer class="center padding-64">
+
+            <a href="#Home" class="button   light-grey"> <i class="fa    fa-arrow-up margin-right"> </i> Voltar </a>
+
+            <div class="xlarge   section">
+                <a href="https://facebook.com//" target="_blank"><i
+                        class="fa fa-facebook-official hover-opacity"></i></a>
+                <a href="https://twitter.com//" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+                <a href="https://br.pinterest.com/" target="_blank"> <i
+                        class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                <a href="https://twitter.com//" target="_blank"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/" target="_blank"> <i
+                        class="fa   fa-linkedin hover-opacity"> </i> </a>
+            </div>
+
+            <p><a href="https://www.ghgconsultoriaemti.com/" target="_blank"> GHG Consultoria em Ti </a> - Colombo -
+                PR </a>
+            </p>
+
+            Todos os direitos reservados - 2023 </small>
+            <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a>
+            </p>
+        </footer>
+
+
+        <!-- 13 - JavaScript -->
+        <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+            crossorigin="anonymous" defer></script>
+
+</body>
+
+</html>
